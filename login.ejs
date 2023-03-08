@@ -1,0 +1,17 @@
+<h1>Student login</h1>
+<% if (messages.error){  %>
+    <%= messages.error %>
+    <% } %>
+<form action="/login" method="POST">
+    
+    <label for="username">UserName</label>
+    <input type="text" name="username" placeholder="Enter name"><br><br>
+    
+    
+    <label for="password">password</label>
+    <input type="password" id="password" name="password" placeholder="Enter the Password"><br><br>
+    
+    
+    <button type="submit" value="submit">Login</button>
+</form>
+<a href="/register">Register</a>
